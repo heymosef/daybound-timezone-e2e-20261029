@@ -1,0 +1,10 @@
+name: Validate pull requests
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Read-only event context probe; not a CI validation proof"
